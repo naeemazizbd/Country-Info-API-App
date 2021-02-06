@@ -50,15 +50,15 @@ const displayCountriesDetails=name=>{
     .then (response=>response.json())
      .then(data=>countryAllInfo(data[0]));
 
-}
+};
 
 const countryAllInfo=country=>{
     const countryDiv=document. getElementById("countryDetails")
      countryDiv.innerHTML= `
-     <img src="${country.flag}" class="flag">
-    <p>${country.population}</p>
-    <p>${country.borders}</p>
-    <p>${country.capital}</p>    
-    <p>${country.region}</p>
+     <img  src="${country.flag}" class="flag">
+    <p>Number of population ${country.population}</p>
+    <p>Border Share - ${country.borders}</p>
+    <p>Capital name- ${country.capital}</p>    
+    <p>Region- ${country.region}</p>
     `
 }

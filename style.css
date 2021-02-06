@@ -1,22 +1,25 @@
 *{
+    
     font-family: 'Kanit', sans-serif;
+    align-items: center;
+   
 }
 
 .flag{
-    width: 100px;
-}
-.countryStyle{
-    background-color: rgb(148, 151, 151);
-    padding: 5px;
-    margin: 5px;
-    border-radius: 10px;
     width: 200px;
-   
-
-}
-
-#country{
-    display:grid;
-    grid-template-columns: repeat(5, 0fr) ;
     
 }
+.countryStyle{
+    background-color: rgb(240, 240, 240);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.scrollbar
+{
+    height: 630px;
+	overflow-y: scroll;	
+}
+
+
